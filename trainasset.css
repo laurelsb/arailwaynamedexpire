@@ -1,0 +1,118 @@
+:root {
+  --text:#FFFFFF;
+  --highlight:#63c6b0;
+  --titlesize:32px;
+  --headingsize:18px;
+  --parasize:14px;
+  --c_red:#751C34;
+  --c_bg:#FFE6A7;
+  --c_blue:#A491C5;
+  --c_white:#FFFFFF;
+  --c_black:#0E0A11;
+  --c_darkred:#441522;
+  background-color: var(--c_bg);
+color:var(--c_white);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  display:inline-block;
+  position: relative;
+  left: 0px;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  margin-top:0%;
+  font-size:var(--titlesize);
+  color:var(--c_darkred);
+  font-weight:900;
+}
+nav {
+    position: relative;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top:2%;
+}
+nav ul li{
+    margin: 0;
+    padding: 20px 10px;
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a{
+color:#19070C;
+text-decoration:underline 2.5px var(--c_bg);
+  text-underline-offset: 8px;
+ transition: text-decoration-color 300ms, text-underline-offset 300ms, color 300ms;
+  font-size:var(--headingsize);
+  font-family:'Raleway','Helvetica Neue','Arial',sans-serif;
+  font-weight:600;
+}
+nav ul li a:hover {
+text-decoration-color: var(--c_red);
+  text-underline-offset: 0.3em;
+  color:var(--c_red);
+}
+
+h1,p {
+  color:#19070C;
+  font-family:'Raleway','Helvetica Neue','Arial',sans-serif;
+}
+.containtext {
+  margin-top:5%;
+  margin-left:25%;
+  margin-right:25%;
+display:inline-block;
+text-align: center;
+}
+.containtext h1 {
+    font-size:16px;
+    font-weight:600;
+}
+.containtext p {
+  color:#19070C;
+  padding-top:10px;
+    font-size:12px;
+    font-weight:100;
+}
+
+#trainvideo {
+  display: block;
+margin: 0 auto;
+margin-top:4%;
+text-align: center;
+}
+
+.traintime {
+  display: inline-block;
+  margin-top:4%;
+}
+.buttoncontainer {
+    text-align:center;
+}
+.button {
+  margin-top:4%;
+  margin-bottom:1%;
+  position: relative;
+  display:inline-block;
+  font-family:'Raleway','Helvetica Neue','Arial',sans-serif;
+  font-weight: bold;
+  background-color:#E5C6A0;
+  color:var(--c_darkred);
+  text-decoration: none;
+  padding:15px;
+  border-radius: 25px;
+  transition: background-color 300ms, color 300ms;
+}
+.button:hover {
+  background-color:var(--c_darkred);
+  color:var(--c_bg);
+}
+.gamehold {
+  margin-top:4%;
+  margin-left:2.25%;
+}
