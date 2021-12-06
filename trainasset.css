@@ -3,7 +3,7 @@
   --highlight:#63c6b0;
   --titlesize:32px;
   --headingsize:18px;
-  --parasize:14px;
+  --parasize:18px;
   --c_red:#751C34;
   --c_bg:#FFE6A7;
   --c_blue:#A491C5;
@@ -28,7 +28,10 @@ body {
   font-size:var(--titlesize);
   color:var(--c_darkred);
   font-weight:900;
+  animation: movein 3s;
+  transition: color 300ms;
 }
+
 nav {
     position: relative;
     left: 0px;
@@ -67,52 +70,35 @@ h1,p {
   margin-left:25%;
   margin-right:25%;
 display:inline-block;
-text-align: center;
+margin-bottom:4%;
+
 }
 .containtext h1 {
     font-size:16px;
     font-weight:600;
+    text-align:center;
+    animation: fade 3s;
 }
 .containtext p {
   color:#19070C;
   padding-top:10px;
-    font-size:12px;
+    font-size:13px;
     font-weight:100;
+      text-align:center;
+      animation: fade 5s;
 }
 
-#trainvideo {
-  display: block;
-margin: 0 auto;
-margin-top:4%;
-text-align: center;
-}
-
-.traintime {
-  display: inline-block;
-  margin-top:4%;
-}
-.buttoncontainer {
-    text-align:center;
-}
-.button {
-  margin-top:4%;
-  margin-bottom:1%;
-  position: relative;
-  display:inline-block;
-  font-family:'Raleway','Helvetica Neue','Arial',sans-serif;
-  font-weight: bold;
-  background-color:#E5C6A0;
-  color:var(--c_darkred);
-  text-decoration: none;
-  padding:15px;
-  border-radius: 25px;
-  transition: background-color 300ms, color 300ms;
-}
-.button:hover {
-  background-color:var(--c_darkred);
-  color:var(--c_bg);
-}
 .gamehold {
   margin-top:4%;
   margin-left:2.25%;
+  margin-bottom: 4%;
+}
+
+@keyframes fade {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes movein {
+  0% {top: -100px;}
+  100% {top:0px;}
 }
